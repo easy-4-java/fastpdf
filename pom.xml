@@ -88,6 +88,7 @@
  		<xmlworker-fix.version>5.5.8-RC1</xmlworker-fix.version>
  		<xstream.version>1.4.21</xstream.version>
         <!-- Maven Plugin versions -->
+    
     </properties>
 	<dependencyManagement>
 		<dependencies>
