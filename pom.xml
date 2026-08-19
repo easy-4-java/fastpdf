@@ -112,9 +112,9 @@
 					<configuration>
 						<defaultLibBundleDir>lib</defaultLibBundleDir>
 						<!-- 源代码编译版本 -->
-						<source>1.7</source>
+						<source>17</source>
 						<!-- 目标平台编译版本 -->
-						<target>1.7</target>
+						<target>17</target>
 						<!-- 字符集编码 -->
 						<encoding>${project.build.sourceEncoding}</encoding>
 						<!--  -->
@@ -328,46 +328,46 @@
     <properties>
     	<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     	<antlr.version>3.4</antlr.version>
-    	<alibaba-fastjson.version>1.2.15</alibaba-fastjson.version>
-    	<batik.version>1.8</batik.version>
-    	<commons-beanutils.version>1.9.3</commons-beanutils.version>
-    	<commons-lang3.version>3.4</commons-lang3.version>
+    	<alibaba-fastjson.version>2.0.57</alibaba-fastjson.version>
+    	<batik.version>1.18</batik.version>
+    	<commons-beanutils.version>1.11.0</commons-beanutils.version>
+    	<commons-lang3.version>3.18.0</commons-lang3.version>
 		<commons-logging.version>1.2</commons-logging.version>
-		<commons-io.version>2.5</commons-io.version>
+		<commons-io.version>2.18.0</commons-io.version>
 		<commons-imaging.version>1.0-R1534292</commons-imaging.version>
 		<commons-pool2.version>2.4.2</commons-pool2.version>
     	<cssparser.version>0.9.18</cssparser.version>
     	<docx4j.version>3.3.2</docx4j.version>
-    	<dom4j.version>1.6.1</dom4j.version>
+    	<dom4j.version>2.1.4</dom4j.version>
  		<flying-saucer.version>9.0.8</flying-saucer.version>
 		<flying-saucer-fix.version>9.0.8</flying-saucer-fix.version>
 		<freemarker.version>2.3.23</freemarker.version>
-		<gson.version>2.2.1</gson.version>
- 		<jackson.version>2.6.4</jackson.version>
+		<gson.version>2.11.0</gson.version>
+ 		<jackson.version>2.18.3</jackson.version>
  		<jeekit.version>1.0.0-SNAPSHOT</jeekit.version>
- 		<jdom.version>2.0.2</jdom.version>
+ 		<jdom.version>2.0.6.1</jdom.version>
  		<jsonlib.version>2.4</jsonlib.version>
 		<json-simple.version>1.1.1</json-simple.version>
- 		<jsoup.version>1.10.1</jsoup.version>
- 		<junit.version>4.12</junit.version>
+ 		<jsoup.version>1.18.3</jsoup.version>
+ 		<junit.version>4.13.2</junit.version>
  		<htmlparser.version>1.4</htmlparser.version>
  		<itext.version>4.2.2</itext.version>
 		<itext7.version>7.0.1</itext7.version>
-		<itextpdf.version>5.5.10</itextpdf.version>
-		<pdfbox.version>1.8.11</pdfbox.version><!--2.0.0-RC3 -->
+		<itextpdf.version>5.5.13.3</itextpdf.version>
+		<pdfbox.version>3.0.3</pdfbox.version><!--2.0.0-RC3 -->
 		<phloc-commons.version>4.4.5</phloc-commons.version>
 		<phloc-html.version>4.4.2</phloc-html.version>
 		<phloc-css.version>3.8.0</phloc-css.version>
 		<phloc-json.version>3.0.3</phloc-json.version>
  		<servlet-api.version>3.0.1</servlet-api.version>
  		<slf4j.version>1.7.22</slf4j.version>
- 		<struts2.version>2.5.5</struts2.version>
+ 		<struts2.version>2.5.33</struts2.version>
 		<struts2-annotations.version>1.0.6</struts2-annotations.version>
 		<struts2-xwork.version>2.3.31</struts2-xwork.version>
- 		<spring.version>4.3.5.RELEASE</spring.version><!-- 3.0.5.RELEASE，4.1.6.RELEASE，4.2.5.RELEASE， -->
- 		<velocity.version>1.7</velocity.version>
-		<velocity-tools.version>2.0</velocity-tools.version>
- 		<xstream.version>1.4.8</xstream.version>
+ 		<spring.version>6.2.0</spring.version><!-- 3.0.5.RELEASE，4.1.6.RELEASE，4.2.5.RELEASE， -->
+ 		<velocity.version>2.4</velocity.version>
+		<velocity-tools.version>3.1</velocity-tools.version>
+ 		<xstream.version>1.4.21</xstream.version>
 		<xml-apis.version>1.3.04</xml-apis.version>
  		<xmlworker-fix.version>5.5.8-RC1</xmlworker-fix.version>
 	</properties>
@@ -630,14 +630,14 @@
 			
 			<!--  Dom4j是一个Java的XML API，类似于jdom，用来读写XML文件的工具包。 -->
 			<dependency>
-				<groupId>dom4j</groupId>
+				<groupId>org.dom4j</groupId>
 				<artifactId>dom4j</artifactId>
 				<version>${dom4j.version}</version>
 			</dependency>
 			<!--JDOM是一种使用 XML（标准通用标记语言下的一个子集） 的独特 Java 工具包，。它的设计包含 Java 语言的语法乃至语义。-->
 			<dependency>
 				<groupId>org.jdom</groupId>
-				<artifactId>jdom</artifactId>
+				<artifactId>jdom2</artifactId>
 				<version>${jdom.version}</version>
 			</dependency>
 			<!-- XStream是 thoughtworks开发的开源框架，用于实现XML数据于Java对象、Json数据的转换 -->
@@ -672,17 +672,11 @@
 				Class、Collection、Map、Date或enum） 零依赖（没有依赖其它任何类库除了JDK）
 			-->
 			<dependency>
-				<groupId>com.alibaba</groupId>
-				<artifactId>fastjson</artifactId>
+				<groupId>com.alibaba.fastjson2</groupId>
+				<artifactId>fastjson2</artifactId>
 				<version>${alibaba-fastjson.version}</version>
 			</dependency>
 			<!--json-lib是一个Java类库,提供将Java对象,包括beans,maps,collections,javaarrays和xml等转换成JSON,或者反向转换的功能-->
-			<dependency>
-				<groupId>net.sf.json-lib</groupId>
-				<artifactId>json-lib</artifactId>
-				<version>${jsonlib.version}</version>
-				<classifier>jdk15</classifier>
-			</dependency>
 			<!-- Simple JSON是Google开发的Java JSON解析框架,基于Apache协议。 -->
 			<dependency>
 				<groupId>com.googlecode.json-simple</groupId>
@@ -699,11 +693,6 @@
 			<!-- ######################PDF文档生成和解析工具包###################### -->
 
 			<!--itext -->
-			<dependency>
-				<groupId>com.lowagie</groupId>
-				<artifactId>itext</artifactId>
-				<version>${itext.version}</version>
-			</dependency>
 			<dependency>
 				<groupId>com.lowagie</groupId>
 				<artifactId>itext-rtf</artifactId>
@@ -927,12 +916,12 @@
 			-->
 			<dependency>
 				<groupId>org.apache.velocity</groupId>
-				<artifactId>velocity</artifactId>
+				<artifactId>velocity-engine-core</artifactId>
 				<version>${velocity.version}</version>
 			</dependency>
 			<dependency>
-				<groupId>org.apache.velocity</groupId>
-				<artifactId>velocity-tools</artifactId>
+				<groupId>org.apache.velocity.tools</groupId>
+				<artifactId>velocity-tools-generic</artifactId>
 				<version>${velocity-tools.version}</version>
 			</dependency>
 			<!-- FreeMarker是一个用Java语言编写的模板引擎，它基于模板来生成文本输出 -->
@@ -1064,11 +1053,6 @@
 				<groupId>org.apache.struts</groupId>
 				<artifactId>struts-annotations</artifactId>
 				<version>${struts2-annotations.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.apache.struts.xwork</groupId>
-				<artifactId>xwork-core</artifactId>
-				<version>${struts2-xwork.version}</version>
 			</dependency>
  
 		</dependencies>
