@@ -370,7 +370,8 @@
  		<xstream.version>1.4.21</xstream.version>
 		<xml-apis.version>1.3.04</xml-apis.version>
  		<xmlworker-fix.version>5.5.8-RC1</xmlworker-fix.version>
-	</properties>
+	        <java.version>17</java.version>
+    </properties>
 	
 	<dependencyManagement>
 		<dependencies>
