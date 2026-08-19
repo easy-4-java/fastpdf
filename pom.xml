@@ -38,51 +38,56 @@
         </developer>
     </developers> 
     <properties>
-    	<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    	<antlr.version>3.4</antlr.version>
+        <!-- ═══ 第一段: 基础属性（自然排序）═══ -->
+        <java.version>17</java.version>
+        <maven.compiler.release>${java.version}</maven.compiler.release>
+        <maven.version>3.9.16</maven.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <!-- Dependency versions -->
     	<alibaba-fastjson.version>2.0.57</alibaba-fastjson.version>
+    	<antlr.version>3.4</antlr.version>
     	<batik.version>1.18</batik.version>
     	<commons-beanutils.version>1.11.0</commons-beanutils.version>
+		<commons-imaging.version>1.0-R1534292</commons-imaging.version>
+		<commons-io.version>2.18.0</commons-io.version>
     	<commons-lang3.version>3.18.0</commons-lang3.version>
 		<commons-logging.version>1.2</commons-logging.version>
-		<commons-io.version>2.18.0</commons-io.version>
-		<commons-imaging.version>1.0-R1534292</commons-imaging.version>
 		<commons-pool2.version>2.4.2</commons-pool2.version>
     	<cssparser.version>0.9.18</cssparser.version>
     	<docx4j.version>3.3.2</docx4j.version>
     	<dom4j.version>2.1.4</dom4j.version>
- 		<flying-saucer.version>9.0.8</flying-saucer.version>
 		<flying-saucer-fix.version>9.0.8</flying-saucer-fix.version>
+ 		<flying-saucer.version>9.0.8</flying-saucer.version>
 		<freemarker.version>2.3.23</freemarker.version>
 		<gson.version>2.11.0</gson.version>
- 		<jackson.version>2.18.3</jackson.version>
- 		<jeekit.version>1.0.0-SNAPSHOT</jeekit.version>
- 		<jdom.version>2.0.6.1</jdom.version>
- 		<jsonlib.version>2.4</jsonlib.version>
-		<json-simple.version>1.1.1</json-simple.version>
- 		<jsoup.version>1.18.3</jsoup.version>
- 		<junit.version>4.13.2</junit.version>
  		<htmlparser.version>1.4</htmlparser.version>
  		<itext.version>4.2.2</itext.version>
 		<itext7.version>7.0.1</itext7.version>
 		<itextpdf.version>5.5.13.3</itextpdf.version>
-		<pdfbox.version>3.0.3</pdfbox.version><!--2.0.0-RC3 -->
+ 		<jackson.version>2.18.3</jackson.version>
+ 		<jeekit.version>1.0.0-SNAPSHOT</jeekit.version>
+ 		<jdom.version>2.0.6.1</jdom.version>
+		<json-simple.version>1.1.1</json-simple.version>
+ 		<jsonlib.version>2.4</jsonlib.version>
+ 		<jsoup.version>1.18.3</jsoup.version>
+ 		<junit.version>4.13.2</junit.version>
+		<pdfbox.version>3.0.3</pdfbox.version>
 		<phloc-commons.version>4.4.5</phloc-commons.version>
-		<phloc-html.version>4.4.2</phloc-html.version>
 		<phloc-css.version>3.8.0</phloc-css.version>
+		<phloc-html.version>4.4.2</phloc-html.version>
 		<phloc-json.version>3.0.3</phloc-json.version>
  		<servlet-api.version>3.0.1</servlet-api.version>
  		<slf4j.version>1.7.22</slf4j.version>
- 		<struts2.version>2.5.33</struts2.version>
+ 		<spring.version>6.2.0</spring.version>
 		<struts2-annotations.version>1.0.6</struts2-annotations.version>
+ 		<struts2.version>2.5.33</struts2.version>
 		<struts2-xwork.version>2.3.31</struts2-xwork.version>
- 		<spring.version>6.2.0</spring.version><!-- 3.0.5.RELEASE，4.1.6.RELEASE，4.2.5.RELEASE， -->
- 		<velocity.version>2.4</velocity.version>
 		<velocity-tools.version>3.1</velocity-tools.version>
- 		<xstream.version>1.4.21</xstream.version>
+ 		<velocity.version>2.4</velocity.version>
 		<xml-apis.version>1.3.04</xml-apis.version>
  		<xmlworker-fix.version>5.5.8-RC1</xmlworker-fix.version>
-	        <java.version>17</java.version>
+ 		<xstream.version>1.4.21</xstream.version>
+        <!-- Maven Plugin versions -->
     </properties>
 	<dependencyManagement>
 		<dependencies>
