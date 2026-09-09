@@ -43,8 +43,6 @@
         <module>fastpdf-struts2</module>
         <module>fastpdf-webmvc</module>
         <module>fastpdf-xpdf</module>
-        <module>fastpdf-docx4j</module>
-        <module>fastpdf-itextpdf</module>
     </modules>
     <properties>
         
