@@ -36,14 +36,14 @@
             <email>hnxyhcwdl1003@163.com</email>
         </developer>
     </developers>
-    <modules>
-        <module>fastpdf-core</module>
-        <module>fastpdf-icepdf</module>
-        <module>fastpdf-pdfbox</module>
-        <module>fastpdf-struts2</module>
-        <module>fastpdf-webmvc</module>
-        <module>fastpdf-xpdf</module>
-    </modules>
+    <subprojects>
+        <subproject>fastpdf-core</subproject>
+        <subproject>fastpdf-icepdf</subproject>
+        <subproject>fastpdf-pdfbox</subproject>
+        <subproject>fastpdf-struts2</subproject>
+        <subproject>fastpdf-webmvc</subproject>
+        <subproject>fastpdf-xpdf</subproject>
+    </subprojects>
     <properties>
         
         <java.version>21</java.version>
